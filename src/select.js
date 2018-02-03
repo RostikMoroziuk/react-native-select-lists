@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View, Text, Dimensions, Platform, TouchableWithoutFeedback } from 'react-native';
 
 import Caret from './caret';
@@ -127,11 +128,11 @@ const styles = StyleSheet.create({
 });
 
 Select.propTypes = {
-  listHeight: React.PropTypes.number,
-  listPosition: React.PropTypes.oneOf(['down', 'up']),
-  padding: React.PropTypes.number,
-  zIndex: React.PropTypes.number,
-  onSelect: React.PropTypes.func
+  listHeight: PropTypes.number,
+  listPosition: PropTypes.oneOf(['down', 'up']),
+  padding: PropTypes.number,
+  zIndex: PropTypes.number,
+  onSelect: PropTypes.func
 };
 
 Select.defaultProps = {

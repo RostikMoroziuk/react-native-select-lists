@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { StyleSheet, View } from 'react-native';
 
 class Caret extends Component {
@@ -43,8 +44,8 @@ const styles = StyleSheet.create({
 });
 
 Caret.propTypes = {
-  size: React.PropTypes.number,
-  color: React.PropTypes.string,
+  size: PropTypes.number,
+  color: PropTypes.string,
 };
 
 Caret.defaultProps = {
