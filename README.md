@@ -1,24 +1,17 @@
-# React Native Select List
+# React Native Select Lists
 
-Simple **select** for React Native Applications.
-
-[![GitHub issues](https://img.shields.io/github/issues/georgest/react-native-select-list.svg)](https://github.com/georgest/react-native-select-list/issues)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/georgest/react-native-select-list/blob/master/LICENSE)
-
-<img src="http://georgest.me/images/projects/react-native-select-list/demo.jpg" width="320" />
-___
 
 ## Instalation
 
 ```
-npm i react-native-select-list --save-dev
+npm i react-native-select-lists --save-dev
 ```
 
 
 ## Usage
 
 ```js
-import { Select, Option } from 'react-native-select-list';
+import { Select, Option } from 'react-native-select-lists';
 
 <Select>
   <Option value={1}>List item 1</Option>
