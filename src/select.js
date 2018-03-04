@@ -26,19 +26,6 @@ class Select extends Component {
     }
   }
 
-  // measureProps() {
-  //   this.refs.select.measureInWindow((x, y, width, height) => {
-  //     this.setState({
-  //       select: {
-  //         x: x,
-  //         y: y,
-  //         width: width,
-  //         height: height,
-  //       }
-  //     });
-  //   });
-  // }
-
   onOptionPressed(value, text) {
     this.setState({
       visible: false,
