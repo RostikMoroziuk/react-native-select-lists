@@ -37,8 +37,7 @@ class List extends Component {
     const { children, position } = this.props;
 
     return (
-      <Modal
-        transparent={true}>
+      <View>
         <TouchableWithoutFeedback onPress={this.props.onOverlayPress}>
           <View style={{ flex: 1}}></View>
         </TouchableWithoutFeedback>
@@ -50,9 +49,9 @@ class List extends Component {
             {
               width: this.state.width,
               maxHeight: this.props.height,
-              left: this.state.x,
-              top: this.state.y + (position === 'down' ? this.state.height : -this.state.list),
-              opacity: this.state.list ? 1 : 0,
+              // left: this.state.x,
+              // top: this.state.y + (position === 'down' ? this.state.height : -this.state.list),
+              // opacity: this.state.list ? 1 : 0,
             },
             this.props.style
           ]}>
@@ -77,14 +76,14 @@ class List extends Component {
             </AnimatedScrollView>
           </View>
         </View>
-      </Modal>
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
   list: {
-    position: 'absolute',
+    // position: 'absolute',
     borderWidth: 1,
     borderColor: '#cccccc',
     backgroundColor: 'white',
