@@ -67,7 +67,7 @@ class Select extends Component {
             style={[styles.select, this.props.selectStyle, {paddingHorizontal: padding}]}
             >
             <Text
-              style={[this.props.selectTextStyle, {width: 222 - offset}]}
+              style={[this.props.selectTextStyle]}
               numberOfLines={1}
               lineBreakMode='tail'
             >{ this.state.value }</Text>
